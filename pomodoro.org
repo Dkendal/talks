@@ -1,0 +1,250 @@
+# -*- coding: utf-8; org-reveal-note-key-char: n; -*-
+
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:nil
+#+OPTIONS: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:nil e:t
+#+OPTIONS: email:nil f:t inline:t num:nil p:nil pri:nil prop:nil stat:t tags:t
+#+OPTIONS: tasks:nil tex:nil timestamp:nil title:t toc:nil todo:nil |:t
+#+TITLE: 🍅 Pomodoro 🍅
+#+DATE: <2017-01-26 Thu>
+#+AUTHOR: Dylan Kendal
+#+EMAIL: dylan@stembolt.com
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 24.5.1 (Org mode 9.0.3)
+#+OPTIONS: reveal_center:t reveal_control:t reveal_height:-1 reveal_history:nil
+#+OPTIONS: reveal_keyboard:t reveal_overview:t reveal_progress:t
+#+OPTIONS: reveal_rolling_links:nil reveal_single_file:nil
+#+OPTIONS: reveal_slide_number:"c" reveal_title_slide:auto reveal_width:-1
+#+REVEAL_MARGIN: -1
+#+REVEAL_MIN_SCALE: -1
+#+REVEAL_MAX_SCALE: -1
+#+REVEAL_ROOT: /home/dylan/node_modules/reveal.js
+#+REVEAL_TRANS: default
+#+REVEAL_SPEED: default
+#+REVEAL_THEME: moon
+#+REVEAL_EXTRA_CSS:
+#+REVEAL_EXTRA_JS:
+#+REVEAL_HLEVEL: 1
+#+REVEAL_TITLE_SLIDE_BACKGROUND:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_REPEAT:
+#+REVEAL_TITLE_SLIDE_BACKGROUND_TRANSITION:
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND:
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_SIZE:
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_POSITION:
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_REPEAT:
+#+REVEAL_DEFAULT_SLIDE_BACKGROUND_TRANSITION:
+#+REVEAL_MATHJAX_URL: https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+#+REVEAL_PREAMBLE:
+#+REVEAL_HEAD_PREAMBLE:
+#+REVEAL_POSTAMBLE:
+#+REVEAL_MULTIPLEX_ID:
+#+REVEAL_MULTIPLEX_SECRET:
+#+REVEAL_MULTIPLEX_URL:
+#+REVEAL_MULTIPLEX_SOCKETIO_URL:
+#+REVEAL_SLIDE_HEADER:
+#+REVEAL_SLIDE_FOOTER:
+#+REVEAL_PLUGINS: notes
+#+REVEAL_DEFAULT_FRAG_STYLE:
+#+REVEAL_INIT_SCRIPT:
+#+REVEAL_HIGHLIGHT_CSS: %r/lib/css/zenburn.css
+
+* Tasks                                                              :ignore:
+** TODO Write slide content and notes for friday talk
+  :LOGBOOK:
+  CLOCK: [2017-01-27 Fri 15:12]--[2017-01-27 Fri 15:37] =>  0:25
+  CLOCK: [2017-01-27 Fri 14:30]--[2017-01-27 Fri 15:04] =>  0:34
+  CLOCK: [2017-01-27 Fri 14:01]--[2017-01-27 Fri 14:26] =>  0:25
+  CLOCK: [2017-01-27 Fri 13:30]--[2017-01-27 Fri 13:55] =>  0:25
+  CLOCK: [2017-01-27 Fri 12:59]--[2017-01-27 Fri 13:24] =>  0:25
+  :END:
+** TODO format transitions
+** TODO add images
+* Preamble
+  #+BEGIN_NOTES
+  * We talk frequently about techical abilities but not about /soft skills/
+  * Attitude is that some people have good soft skills and others don't
+  * e.g. Kevin and Gray are good at talking to clients
+  * time management is one of these soft skills
+  * Challenge: not often clear how to improve at these /soft skills/
+  #+END_NOTES
+* Disclaimer
+  I am not qualified to give advice about time management.
+  #+ATTR_HTML: :width 50%
+  http://i.imgur.com/am3qXZ1.jpg
+  #+BEGIN_NOTES
+  * Time management not something I am good at
+  * work in progress
+  * Found Pomodoro 1 week ago
+  * other people could benefit from it
+  * other time management techniques
+  * if you know you're probably better at it than me
+  #+END_NOTES
+* I Suck at Time Management
+  #+BEGIN_NOTES
+  * traditionally bad at time management.
+  * Something that has come up a number of times for me.
+  #+END_NOTES
+** Symptoms of Bad Time Management
+   #+BEGIN_NOTES
+   * two biggest problems with how I work.
+   * difficult to catch because you still /feel/ productive
+   #+END_NOTES
+   1. Gold plating
+   2. Working on a task tangent to the real goal
+** Gold Plating
+   #+BEGIN_NOTES
+   * Still met the same requirements in the end.
+   * Took much longer because of idealized solution.
+   * 'Perfect' solution doesn't matter if the spec if wrong.
+   #+END_NOTES
+   A.k.a. going into the rabbit hole.
+** Working Tangent to Goal
+   #+BEGIN_NOTES
+   * Everything takes longer because you aren't really working to your goal.
+   * Difficult to catch because you /feel/ productive.
+   * Big problem is how it affects other perception of how long it takes you to complete something.
+   #+END_NOTES
+* ... But I'm trying to get better
+  #+BEGIN_NOTES
+  * Assessed what i thought my issues were.
+  * Came up a couple things i wanted to do that I thought would help.
+  #+END_NOTES
+** Things I thought could help
+   #+BEGIN_NOTES
+   Don't go into detail.
+   #+END_NOTES
+   #+ATTR_REVEAL: :frag grow
+   1) Limit time on tasks.
+   2) Keep better personal time logs.
+   3) Review what I spend time on throughout the day.
+* It already exists
+  #+BEGIN_NOTES
+  As with most things, someone already invented this management system.
+  #+END_NOTES
+* 🍅 Pomodoro 🍅
+  #+BEGIN_NOTES
+  * Simple, low-tech technique to improve *focus* and *flow*.
+  * if you want all you need is pencil paper and
+  #+END_NOTES
+  Simple, low-tech technique to improve *focus* and *flow*.
+** History
+   * Who cares!
+   * Francesco Cirillo developed it in the late 80's
+** 1. Decide on the task to be done.
+   #+BEGIN_NOTES
+   * Keep a TODO list
+   * pick a task
+   #+END_NOTES
+** 2. Set the Pomodoro timer
+    #+BEGIN_NOTES
+    * low tech option is a kitchen timer
+    * could use a phone timer or youtube
+    * i use a timer in org mode.
+    #+END_NOTES
+    * Traditionally 25 minutes.
+    * Every 25 minute block is a /Pomodoro/ 🍅.
+    #+ATTR_HTML: :width 30%
+    [[http://brittbrouse.com/wp-content/uploads/2011/02/timer.jpg]]
+** 3. Work on the task until the timer rings
+   #+BEGIN_NOTES
+   If a distraction pops into your head, write it down, but immediately get back on task.
+   #+END_NOTES
+** 4. Put a checkmark on your TODO list
+   Each checkmark is a /Pomodoro/ you've completed towards your task.
+   #+BEGIN_NOTES
+   You can use whatever method you want to track your time, but if you want to go
+   strict pencil and paper this is all you have to do, don't need timestamps
+   #+END_NOTES
+** 5. Take a break
+   #+BEGIN_NOTES
+   * take a moment to let your mind calm down
+   * I write a note about what i worked on for the last Pomodoro before i forget.
+   #+END_NOTES
+   After each Pomodoro take 5 minute break.
+** 6. Take a longer break
+   Every fourth Pomodoro take a 20 minute break.
+   #+BEGIN_NOTES
+   * let's you cool off a bit
+   * assimilate the information
+   * important for me because when I get really narrow focus on tasks.
+   #+END_NOTES
+* Benifits
+** Personal accountability
+   #+BEGIN_NOTES
+   * breaking work into chunks
+   * scheduled intervals to revaluate what you've spent time on
+   * most time i will waste is 25 minutes
+     + without having to feel guilty about it
+   #+END_NOTES
+** Cut down Interruptions
+   #+BEGIN_NOTES
+   * stay focused during the Pomodoro
+   * deal with external interupptions during your break.
+   #+END_NOTES
+** Work more efficiently
+   #+BEGIN_NOTES
+   * regular review of the task
+   * better quality work during the Pomodoro
+   #+END_NOTES
+** Better estimation
+   #+BEGIN_NOTES
+   * start to develop a sense of how many time blocks something will take
+   * have historical records to back up estimations
+   #+END_NOTES
+** Find where you really spend time
+   #+BEGIN_NOTES
+   * regularly review what you spent time on
+   * improve your work in the future and throughout the day.
+   #+END_NOTES
+
+* How i do
+** org mode for time tracking and Pomodoro
+   #+BEGIN_SRC org
+    * DONE STARTED Write startup script
+    ** STARTED Write Load testing script
+      CLOSED: [2017-01-25 Wed 12:00]
+      - State "STARTED"    from "TODO"       [2017-01-24 Tue 17:21]
+      :LOGBOOK:
+      CLOCK: [2017-01-25 Wed 11:44]--[2017-01-25 Wed 12:00] =>  0:16
+      CLOCK: [2017-01-25 Wed 11:44]--[2017-01-25 Wed 11:44] =>  0:25
+      CLOCK: [2017-01-25 Wed 10:48]--[2017-01-25 Wed 11:13] =>  0:25
+      CLOCK: [2017-01-25 Wed 10:17]--[2017-01-25 Wed 10:42] =>  0:25
+      CLOCK: [2017-01-25 Wed 09:36]--[2017-01-25 Wed 10:01] =>  0:25
+      :END:
+      - Note taken on [2017-01-25 Wed 12:00] \\
+        Load tested server, Ran 50 games with 5 snakes each 100 by 100 board,
+        ...
+      - Note taken on [2017-01-25 Wed 11:13] \\
+        Ruby test game script generates random uuid's for snakes so that i can
+        ...
+      - Note taken on [2017-01-25 Wed 10:46] \\
+        Figured out issue with my ruby curl data script where it was puts-ing
+        ...
+      - Note take on <2017-01-25 Wed 10:06> \\
+        Wrote a ruby script to generate the curl JSON data.
+   #+END_SRC
+** Agenda in org mode
+    #+BEGIN_SRC org-agenda-mode
+    Friday     27 January 2017
+      TODOs:       0:30- 1:35 Clocked:   (1:05) DONE Fix coveralls integration
+                  8:00...... ----------------
+      TODOs:       9:39-10:04 Clocked:   (0:25) STARTED Load GameServer.State
+                  10:00...... ----------------
+      TODOs:      10:10-10:35 Clocked:   (0:25) STARTED Load GameServer.State
+      TODOs:      10:58-11:55 Clocked:   (0:57) STARTED Load GameServer.State
+                  12:00...... ----------------
+      Pomodoro:   12:59-13:24 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+      Pomodoro:   13:30-13:55 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+                  14:00...... ----------------
+      Pomodoro:   14:01-14:26 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+      Pomodoro:   14:30-15:04 Clocked:   (0:34) TODO Write slide content and notes for friday talk :ignore::
+      Pomodoro:   15:12-15:37 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+                  15:37...... now - - - - - - - - - - - - - - - - - - - - - - - - -
+                  16:00...... ----------------
+                  18:00...... ----------------
+                  20:00...... ----------------
+      TODOs:      In   3 d.:  TODO Publish API docs
+    #+END_SRC

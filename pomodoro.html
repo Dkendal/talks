@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>🍅 Pomodoro 🍅</title>
+<meta name="author" content="(Dylan Kendal)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/home/dylan/node_modules/reveal.js/css/reveal.css"/>
+
+<link rel="stylesheet" href="/home/dylan/node_modules/reveal.js/css/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/home/dylan/node_modules/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition=""><h1 class="title">🍅 Pomodoro 🍅</h1>
+</section>
+
+<section>
+<section id="slide-orgbf5c8f2" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="orgbf5c8f2">Preamble</h2>
+<aside class="notes">
+<ul>
+<li>We talk frequently about techical abilities but not about <i>soft skills</i></li>
+<li>Attitude is that some people have good soft skills and others don't</li>
+<li>e.g. Kevin and Gray are good at talking to clients</li>
+<li>time management is one of these soft skills</li>
+<li>Challenge: not often clear how to improve at these <i>soft skills</i></li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org5a24a1d" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="org5a24a1d">Disclaimer</h2>
+<p>
+I am not qualified to give advice about time management.
+</p>
+
+<div class="figure">
+<p><img src="http://i.imgur.com/am3qXZ1.jpg" alt="am3qXZ1.jpg" width="50%" />
+</p>
+</div>
+<aside class="notes">
+<ul>
+<li>Time management not something I am good at</li>
+<li>work in progress</li>
+<li>Found Pomodoro 1 week ago</li>
+<li>other people could benefit from it</li>
+<li>other time management techniques</li>
+<li>if you know you're probably better at it than me</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf910a8f" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="orgf910a8f">I Suck at Time Management</h2>
+<aside class="notes">
+<ul>
+<li>traditionally bad at time management.</li>
+<li>Something that has come up a number of times for me.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org760adb3" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org760adb3">Symptoms of Bad Time Management</h3>
+<aside class="notes">
+<ul>
+<li>two biggest problems with how I work.</li>
+<li>difficult to catch because you still <i>feel</i> productive</li>
+
+</ul>
+
+</aside>
+<ol>
+<li>Gold plating</li>
+<li>Working on a task tangent to the real goal</li>
+
+</ol>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org37bd3b2" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org37bd3b2">Gold Plating</h3>
+<aside class="notes">
+<ul>
+<li>Still met the same requirements in the end.</li>
+<li>Took much longer because of idealized solution.</li>
+<li>'Perfect' solution doesn't matter if the spec if wrong.</li>
+
+</ul>
+
+</aside>
+<p>
+A.k.a. going into the rabbit hole.
+</p>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org3a26df7" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org3a26df7">Working Tangent to Goal</h3>
+<aside class="notes">
+<ul>
+<li>Everything takes longer because you aren't really working to your goal.</li>
+<li>Difficult to catch because you <i>feel</i> productive.</li>
+<li>Big problem is how it affects other perception of how long it takes you to complete something.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orge386bcb" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="orge386bcb">&#x2026; But I'm trying to get better</h2>
+<aside class="notes">
+<ul>
+<li>Assessed what i thought my issues were.</li>
+<li>Came up a couple things i wanted to do that I thought would help.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-orgc3f17d4" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="orgc3f17d4">Things I thought could help</h3>
+<aside class="notes">
+<p>
+Don't go into detail.
+</p>
+
+</aside>
+<ol class="fragment grow">
+<li>Limit time on tasks.</li>
+<li>Keep better personal time logs.</li>
+<li>Review what I spend time on throughout the day.</li>
+
+</ol>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org99e8d2d" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="org99e8d2d">It already exists</h2>
+<aside class="notes">
+<p>
+As with most things, someone already invented this management system.
+</p>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc25206a" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="orgc25206a">🍅 Pomodoro 🍅</h2>
+<aside class="notes">
+<ul>
+<li>Simple, low-tech technique to improve <b>focus</b> and <b>flow</b>.</li>
+<li>if you want all you need is pencil paper and</li>
+
+</ul>
+
+</aside>
+<p>
+Simple, low-tech technique to improve <b>focus</b> and <b>flow</b>.
+</p>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org5db758c" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org5db758c">History</h3>
+<ul>
+<li>Who cares!</li>
+<li>Francesco Cirillo developed it in the late 80's</li>
+
+</ul>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org6d7644e" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org6d7644e">1. Decide on the task to be done.</h3>
+<aside class="notes">
+<ul>
+<li>Keep a TODO list</li>
+<li>pick a task</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org2de4851" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org2de4851">2. Set the Pomodoro timer</h3>
+<aside class="notes">
+<ul>
+<li>low tech option is a kitchen timer</li>
+<li>could use a phone timer or youtube</li>
+<li>i use a timer in org mode.</li>
+
+</ul>
+
+</aside>
+<ul>
+<li>Traditionally 25 minutes.</li>
+<li>Every 25 minute block is a <i>Pomodoro</i> 🍅.</li>
+
+</ul>
+
+<div class="figure">
+<p><img src="http://brittbrouse.com/wp-content/uploads/2011/02/timer.jpg" alt="timer.jpg" width="30%" />
+</p>
+</div>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-orge5f3927" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="orge5f3927">3. Work on the task until the timer rings</h3>
+<aside class="notes">
+<p>
+If a distraction pops into your head, write it down, but immediately get back on task.
+</p>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org4d69333" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org4d69333">4. Put a checkmark on your TODO list</h3>
+<p>
+Each checkmark is a <i>Pomodoro</i> you've completed towards your task.
+</p>
+<aside class="notes">
+<p>
+You can use whatever method you want to track your time, but if you want to go
+strict pencil and paper this is all you have to do, don't need timestamps
+</p>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-orgb556c94" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="orgb556c94">5. Take a break</h3>
+<aside class="notes">
+<ul>
+<li>take a moment to let your mind calm down</li>
+<li>I write a note about what i worked on for the last Pomodoro before i forget.</li>
+
+</ul>
+
+</aside>
+<p>
+After each Pomodoro take 5 minute break.
+</p>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org0f9ed12" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org0f9ed12">6. Take a longer break</h3>
+<p>
+Every fourth Pomodoro take a 20 minute break.
+</p>
+<aside class="notes">
+<ul>
+<li>let's you cool off a bit</li>
+<li>assimilate the information</li>
+<li>important for me because when I get really narrow focus on tasks.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org8e81cee" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="org8e81cee">Benifits</h2>
+<div class="outline-text-2" id="text-org8e81cee">
+</div><div class="slide-footer"></div>
+</section>
+<section id="slide-orgdd4d1b5" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="orgdd4d1b5">Personal accountability</h3>
+<aside class="notes">
+<ul>
+<li>breaking work into chunks</li>
+<li>scheduled intervals to revaluate what you've spent time on</li>
+<li>most time i will waste is 25 minutes
+<ul>
+<li>without having to feel guilty about it</li>
+
+</ul></li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org143bf9f" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org143bf9f">Cut down Interruptions</h3>
+<aside class="notes">
+<ul>
+<li>stay focused during the Pomodoro</li>
+<li>deal with external interupptions during your break.</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org2a39632" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org2a39632">Work more efficiently</h3>
+<aside class="notes">
+<ul>
+<li>regular review of the task</li>
+<li>better quality work during the Pomodoro</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-orgf1f46d8" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="orgf1f46d8">Better estimation</h3>
+<aside class="notes">
+<ul>
+<li>start to develop a sense of how many time blocks something will take</li>
+<li>have historical records to back up estimations</li>
+
+</ul>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org6373843" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org6373843">Find where you really spend time</h3>
+<aside class="notes">
+<ul>
+<li>regularly review what you spent time on</li>
+<li>improve your work in the future and throughout the day.</li>
+
+</ul>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgdc22d55" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h2 id="orgdc22d55">How i do</h2>
+<div class="outline-text-2" id="text-orgdc22d55">
+</div><div class="slide-footer"></div>
+</section>
+<section id="slide-org9ca50c2" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org9ca50c2">org mode for time tracking and Pomodoro</h3>
+<div class="org-src-container">
+
+<pre  class="src src-org"><span style="color: #cb4b16; font-size: 130%;">* </span><span style="color: #859900; font-weight: bold;">DONE</span><span style="color: #cb4b16; font-size: 130%;"> STARTED Write startup script</span>
+<span style="color: #002b36;">*</span><span style="color: #859900; font-size: 120%;">* STARTED Write Load testing script</span>
+  <span style="color: #586e75; font-weight: bold;">CLOSED:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 12:00]</span>
+  - State "STARTED"    from "TODO"       <span style="color: #268bd2; text-decoration: underline;">[2017-01-24 Tue 17:21]</span>
+<span style="color: #586e75; font-weight: bold;">  :LOGBOOK:</span>
+  <span style="color: #586e75; font-weight: bold;">CLOCK:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 11:44]--[2017-01-25 Wed 12:00]</span> =&gt;  0:16
+  <span style="color: #586e75; font-weight: bold;">CLOCK:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 11:44]--[2017-01-25 Wed 11:44]</span> =&gt;  0:25
+  <span style="color: #586e75; font-weight: bold;">CLOCK:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 10:48]--[2017-01-25 Wed 11:13]</span> =&gt;  0:25
+  <span style="color: #586e75; font-weight: bold;">CLOCK:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 10:17]--[2017-01-25 Wed 10:42]</span> =&gt;  0:25
+  <span style="color: #586e75; font-weight: bold;">CLOCK:</span> <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 09:36]--[2017-01-25 Wed 10:01]</span> =&gt;  0:25
+<span style="color: #586e75; font-weight: bold;">  :END:</span>
+  - Note taken on <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 12:00]</span> \\
+    Load tested server, Ran 50 games with 5 snakes each 100 by 100 board,
+    ...
+  - Note taken on <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 11:13]</span> \\
+    Ruby test game script generates random uuid's for snakes so that i can
+    ...
+  - Note taken on <span style="color: #268bd2; text-decoration: underline;">[2017-01-25 Wed 10:46]</span> \\
+    Figured out issue with my ruby curl data script where it was puts-ing
+    ...
+  - Note take on <span style="color: #268bd2; text-decoration: underline;">&lt;2017-01-25 Wed 10:06&gt;</span> \\
+    Wrote a ruby script to generate the curl JSON data.
+</pre>
+</div>
+<div class="slide-footer"></div>
+</section>
+<section id="slide-org0bb611f" data-background="" data-background-size="" data-background-position="" data-background-repeat="" data-background-transition="">
+<div class="slide-header"></div>
+<h3 id="org0bb611f">Agenda in org mode</h3>
+<div class="org-src-container">
+
+<pre  class="src src-org-agenda-mode">Friday     27 January 2017
+  TODOs:       0:30- 1:35 Clocked:   (1:05) DONE Fix coveralls integration
+              8:00...... ----------------
+  TODOs:       9:39-10:04 Clocked:   (0:25) STARTED Load GameServer.State
+              10:00...... ----------------
+  TODOs:      10:10-10:35 Clocked:   (0:25) STARTED Load GameServer.State
+  TODOs:      10:58-11:55 Clocked:   (0:57) STARTED Load GameServer.State
+              12:00...... ----------------
+  Pomodoro:   12:59-13:24 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+  Pomodoro:   13:30-13:55 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+              14:00...... ----------------
+  Pomodoro:   14:01-14:26 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+  Pomodoro:   14:30-15:04 Clocked:   (0:34) TODO Write slide content and notes for friday talk :ignore::
+  Pomodoro:   15:12-15:37 Clocked:   (0:25) TODO Write slide content and notes for friday talk :ignore::
+              15:37...... now - - - - - - - - - - - - - - - - - - - - - - - - -
+              16:00...... ----------------
+              18:00...... ----------------
+              20:00...... ----------------
+  TODOs:      In   3 d.:  TODO Publish API docs
+</pre>
+</div>
+<div class="slide-footer"></div>
+</section>
+</section>
+</div>
+</div>
+<script src="/home/dylan/node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="/home/dylan/node_modules/reveal.js/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '/home/dylan/node_modules/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '/home/dylan/node_modules/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/home/dylan/node_modules/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '/home/dylan/node_modules/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '/home/dylan/node_modules/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+,});
+</script>
+</body>
+</html>
